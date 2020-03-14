@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url('/background.png');
+  background-repeat: no-repeat;
+  background-size: 80vw 90vh;
+  background-position: center bottom;
+  background-color: rgb(60, 109, 54);
+}
+
+li {
+  margin-top: 8px;
+}
+
+.battle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lifeHeart {
+  height: 6vh;
+  width: 3vw;
+}
+.lifeBar {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  background-color: rgb(230, 230, 230); 
+  border-radius: 10px;
+}
+
+.stats {
+  padding: 4px;
+  width: 80vw;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+  height: 15vh;
+  border-radius: 50%;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  width: 10vw;
+  height: 90vh;
+  word-wrap: break-word;
+}
+
+.choicePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(233, 228, 164);
+  width: 100vw;
+  height: 100vh;
+  word-wrap: break-word;
+  border-radius: 5%;
+}
+
+.choice{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(178, 228, 122);
+  width: 50vw;
+  height: 93vh;
+  word-wrap: break-word;
+  border-radius: 10%;
+}
+.startButton{
+  height: 10vh;
+  width: 20vh;
+  margin-top: 20vh;
+  border: none;
+  background: #276111;
+  color: #ffffff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+.startButton:hover{
+  color: #404040 !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.3s ease 0s;
+}
+
+.moves {
+  list-style: none;
+}
+
+.pokeball {
+  height: 5vh;
+  width: 2.3vw;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+span {
+  font-size: 12px;
+  margin-right: auto;
+  font-weight: bold;
+  color: black;
+  margin-top: 3px;
+  width: 8vw;
+  color: wheat;
+}
+
+.pokeName {
+  text-transform: uppercase;
+}
+/*-----------------------------------------------------*/
+ #lifeBar1, #lifeBar2{ 
+  width: 50%; 
+  background-color: rgb(230, 230, 230); 
+  border-radius: 10px;
+}
+  
+#firstPokemonLife, #secondPokemonLife { 
+  height: 100%;
+  background: rgb(5,103,106);
+  background: linear-gradient(90deg, rgba(5,103,106,1) 0%, rgba(9,121,121,1) 35%, rgba(0,255,109,1) 100%);   
+  line-height: 32px; 
+  color: black;
+  border-radius: 10px;
+  border: solid rgb(0, 85, 0) 1px;
+ } 
+
+#characterOne, #characterTwo{
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  border-radius: 50%;
+  right: 18vw;
+  top: 52vh;
+}
+
+#characterTwo{
+  right: 0;
+  left: 18vw;
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+ 
+
+.choosePokeImg {
+  height: 25vh;
+  width: 15vw;
+}
